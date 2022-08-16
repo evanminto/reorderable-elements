@@ -1,0 +1,9 @@
+reorderable-list {
+  display: block;
+  padding-left: 1rem;
+  list-style: decimal;
+}
+
+reorderable-item {
+  display: list-item;
+}

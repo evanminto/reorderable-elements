@@ -1,0 +1,167 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Demo</title>
+
+    <link rel="stylesheet" href="../src/styles/styles.css">
+    <script src="../src/index.js" type="module"></script>
+
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+
+      reorderable-list > * {
+        margin-top: 1rem;
+      }
+
+      reorderable-item {
+        width: 20rem;
+        max-width: 100%;
+        display: flex;
+        gap: 0.25rem;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1rem;
+        background: white;
+        box-shadow: 0 0.125rem 0.5rem hsla(0, 0%, 0%, 0.15);
+        border-radius: 0.25rem;
+      }
+
+      reorderable-item button {
+        font: inherit;
+        background: black;
+        border: 0;
+        color: white;
+        border-radius: 999px;
+        min-width: 2em;
+        min-height: 2em;
+        display: inline-block;
+      }
+
+      reorderable-item:first-child :is([data-reorderable-top], [data-reorderable-up]) {
+        display: none;
+      }
+
+      reorderable-item:last-child [data-reorderable-down] {
+        display: none;
+      }
+    </style>
+  </head>
+
+  <body>
+    <reorderable-list role="list">
+      <reorderable-item role="listitem" value="1">
+        One
+
+        <div>
+          <button
+            type="button"
+            aria-label="Move to Top"
+            data-reorderable-top
+          >
+            ⤒
+          </button>
+          <button
+            type="button"
+            aria-label="Move Up"
+            data-reorderable-up
+          >
+            ↑
+          </button>
+          <button
+            type="button"
+            aria-label="Move Down"
+            data-reorderable-down
+          >
+            ↓
+          </button>
+        </div>
+      </reorderable-item>
+
+      <reorderable-item role="listitem" value="2">
+        Two
+
+        <div>
+          <button
+            type="button"
+            aria-label="Move to Top"
+            data-reorderable-top
+          >
+            ⤒
+          </button>
+          <button
+            type="button"
+            aria-label="Move Up"
+            data-reorderable-up
+          >
+            ↑
+          </button>
+          <button
+            type="button"
+            aria-label="Move Down"
+            data-reorderable-down
+          >
+            ↓
+          </button>
+        </div>
+      </reorderable-item>
+
+      <reorderable-item role="listitem" value="3">
+        Three
+
+        <div>
+          <button
+            type="button"
+            aria-label="Move to Top"
+            data-reorderable-top
+          >
+            ⤒
+          </button>
+          <button
+            type="button"
+            aria-label="Move Up"
+            data-reorderable-up
+          >
+            ↑
+          </button>
+          <button
+            type="button"
+            aria-label="Move Down"
+            data-reorderable-down
+          >
+            ↓
+          </button>
+        </div>
+      </reorderable-item>
+
+      <reorderable-item role="listitem" value="4">
+        Four
+
+        <div>
+          <button
+            type="button"
+            aria-label="Move to Top"
+            data-reorderable-top
+          >
+            ⤒
+          </button>
+          <button
+            type="button"
+            aria-label="Move Up"
+            data-reorderable-up
+          >
+            ↑
+          </button>
+          <button
+            type="button"
+            aria-label="Move Down"
+            data-reorderable-down
+          >
+            ↓
+          </button>
+        </div>
+      </reorderable-item>
+    </reorderable-list>
+  </body>
+</html>

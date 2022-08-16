@@ -1,0 +1,15 @@
+{
+  "name": "@evanminto/reorderable-list",
+  "version": "0.1.0",
+  "main": "src/index.js",
+  "author": "Evan Minto (evan.minto@gmail.com)",
+  "license": "MIT",
+  "private": false,
+  "scripts": {
+    "start": "snowpack dev src/index.js",
+    "build": "snowpack build"
+  },
+  "devDependencies": {
+    "snowpack": "^3.8.8"
+  }
+}
